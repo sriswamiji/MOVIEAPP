@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+  <title>Mr. swami</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      background-color:#6ad6f4;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      color: white;
+      /*background-color: #e9e9e9;*/
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 20px;
+      font-family:sans-serif;
+      text-transform: uppercase;
+    }
+
+    .aheader{
+        background-color: #6ad6f4;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .left {
+      float: left;
+      width:200px;
+      height:auto;
+      margin: 0;
+      padding: 15px;
+    }
+    .content {
+      margin-left: 150px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color:#6ad6f4;
+        width:auto;
+        justify-content: center;
+      }
+      .navbar a {
+        float:auto;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover{
+        text-align: center;
+        overflow: hidden;
+        background-color: black;
+        font-size: 20px;
+        padding: 10px 12px;
+      }
+    img{
+        width:100%;
+        height:250px;
+        float:auto;
+       }
+    .flex-card{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        }
+
+    .card{
+        border-style: groove;
+        border-radius: 2px, black;
+        width:320px;
+        height:auto;
+        padding:10px;
+        margin:15px;
+        border-radius:0%;
+        }
+        
+    .footer {
+      padding: 15px 10px;
+      background-color: #6ad6f4;
+      position:bottom;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+     <center> <h1>RAILWAY RESERVATION SYSTEM</h1></center>
+      
+    </header>
+    <aside class="left">
+      <form>
+        <p class="aheader"> BOOK 
+              YOUR
+        TICKET 
+            HERE</p>
+            <form class="aform">
+        <input type="text"id="from" name="FROM" placeholder="FROM..">
+        <br><br>
+        <input type="text"id="to" name="TO" placeholder="TO...">
+        <br><br>
+         <input type="date"id="date" name="DATE">
+        <br>
+        <br>
+         <select id="classes" name="classes" placeholder="CLASSES">
+            <option value="GENERAL">GENERAL</option>
+            <option value="FRIST CLASS">FRIST CLASS</option>
+            <option value="SECON CLASS">SECOND CLASS</option>
+            <option value="HANDICAPED">HANDICAPED</option>
+            <option value="LUAGGAGE">LUAGGAGE</option>
+          </select>
+          <br><br>
+          <button type="button" id="button" name="find trains">Find Trains</button>
+      </form>
+      <br><br>
+    </aside>
+    <main class="content">
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Meals</a>
+            <a href="#">Holiday Packages</a>
+            <a href="#">service at station</a>
+            <a href="#">Contact us</a>
+            </div>
+            <br><br>
+    <img src="C:\Users\NANI NELLORE\Pictures\Saved Pictures\railway.jpeg" text="img">
+    <br><br>
+        <h3><center>HOLIDAYS</center></h3>
+<div class="flex-card">
+    <div class="card">
+        <h3>TOURIST TRAINS</h3>
+        <p><ol>
+            <li>MGR superfast express</li>
+            <li>KOCHI superfast express</li>
+            <li>PINAKINI express</li>
+            <li>SIMHAPURI express</li>
+            <li>JANSATHABDI super fast express</li>
+        </ol></p>
+      </div>
+      <div class="card">
+        <h3>INTERNATIONAL PACKAGES</h3>
+        <p><ol>
+            <li>MGR superfast express</li>
+            <li>KOCHI superfast express</li>
+            <li>PINAKINI express</li>
+            <li>SIMHAPURI express</li>
+            <li>JANSATHABDI super fast express</li>
+        </ol></p>
+      </div>
+      <div class="card">
+       <h3>NATIONAL PACKAGES</h3>
+       <p><ol>
+        <li>MGR superfast express</li>
+        <li>KOCHI superfast express</li>
+        <li>PINAKINI express</li>
+        <li>SIMHAPURI express</li>
+        <li>JANSATHABDI super fast express</li>
+    </ol></p> 
+    </div>
+    </div>
+    <br><br>
+    <div>
+    </main>
+    <footer class="footer">&copy; Copyright : indian railwyas</footer>
+  </div>
+</body>
+</html>
