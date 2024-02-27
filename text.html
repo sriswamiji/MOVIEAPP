@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text to Speech</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: linear-gradient(100deg, #fbd2a8, #f9c1b1,white );
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-shadow:0 4px 8px rgba(0, 0, 0, 0.4) ;
+    }
+    textarea {
+        width: 80%;
+        height: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        resize: none;
+        background-color: ;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+        border: none;
+        text-transform:unset;
+    }
+
+    div  button {
+        padding: 10px 20px;
+        font-size: 2rem;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+    }
+    button:hover {
+        background-color: grey;
+    }
+    button:focus {
+        background-color: grey;
+    }
+    @media screen (max-width : 768px) {
+
+         div  button {
+        
+        font-size: 1.5 rem;
+        
+       
+    }
+    }
+</style>
+</head>
+<body>
+    <h2>Text to Speech App</h2>
+    <textarea id="textToSpeak" placeholder="Enter text here..."></textarea>
+    
+    <div><button onclick="speak()"><i class="fas fa-microphone"></i></button></div>
+   
+    
+    <script>
+        function speak() {
+            var text = document.getElementById("textToSpeak").value;
+            var speech = new SpeechSynthesisUtterance();
+            speech.lang = "en-US";
+            speech.text = text;
+            speech.volume = 50;
+            speech.rate = 1;
+            speech.pitch = 1;
+
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+</body>
+</html>
